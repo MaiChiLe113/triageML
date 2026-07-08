@@ -1,0 +1,471 @@
+{
+  "logreg_val": {
+    "macro_f1": 0.3953,
+    "per_class": {
+      "benign": {
+        "precision": 0.9977914848556019,
+        "recall": 0.8517858022216125,
+        "f1-score": 0.9190257972087021,
+        "support": 284298.0
+      },
+      "dos_ddos": {
+        "precision": 0.8326341394627371,
+        "recall": 0.978721200066302,
+        "f1-score": 0.8997866585393729,
+        "support": 48264.0
+      },
+      "port_scan": {
+        "precision": 0.10868702895676319,
+        "recall": 0.9319727891156463,
+        "f1-score": 0.1946714031971581,
+        "support": 294.0
+      },
+      "brute_force": {
+        "precision": 0.5045489006823352,
+        "recall": 0.9701166180758017,
+        "f1-score": 0.6638403990024938,
+        "support": 1372.0
+      },
+      "web_attack": {
+        "precision": 0.01853635050553683,
+        "recall": 0.9565217391304348,
+        "f1-score": 0.036367930098004486,
+        "support": 322.0
+      },
+      "botnet": {
+        "precision": 0.026719509076962415,
+        "recall": 0.9720930232558139,
+        "f1-score": 0.05200945626477541,
+        "support": 215.0
+      },
+      "infiltration": {
+        "precision": 0.0006963788300835655,
+        "recall": 0.8,
+        "f1-score": 0.0013915463558879806,
+        "support": 5.0
+      },
+      "accuracy": 0.8708187710965738,
+      "macro avg": {
+        "precision": 0.35565911319571714,
+        "recall": 0.923030167409373,
+        "f1-score": 0.3952990272380564,
+        "support": 334770.0
+      },
+      "weighted avg": {
+        "precision": 0.9695979019265928,
+        "recall": 0.8708187710965738,
+        "f1-score": 0.9131505847802238,
+        "support": 334770.0
+      }
+    }
+  },
+  "rf_val": {
+    "macro_f1": 0.8778,
+    "per_class": {
+      "benign": {
+        "precision": 0.9995243665266778,
+        "recall": 0.9978860210061273,
+        "f1-score": 0.9987045218523929,
+        "support": 284298.0
+      },
+      "dos_ddos": {
+        "precision": 0.9970605891241797,
+        "recall": 0.9979902204541687,
+        "f1-score": 0.9975251881996003,
+        "support": 48264.0
+      },
+      "port_scan": {
+        "precision": 0.9563758389261745,
+        "recall": 0.9693877551020408,
+        "f1-score": 0.9628378378378378,
+        "support": 294.0
+      },
+      "brute_force": {
+        "precision": 0.9956011730205279,
+        "recall": 0.9897959183673469,
+        "f1-score": 0.9926900584795322,
+        "support": 1372.0
+      },
+      "web_attack": {
+        "precision": 0.9746031746031746,
+        "recall": 0.953416149068323,
+        "f1-score": 0.9638932496075353,
+        "support": 322.0
+      },
+      "botnet": {
+        "precision": 0.3189522342064715,
+        "recall": 0.9627906976744186,
+        "f1-score": 0.4791666666666667,
+        "support": 215.0
+      },
+      "infiltration": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1-score": 0.75,
+        "support": 5.0
+      },
+      "accuracy": 0.9977716043851003,
+      "macro avg": {
+        "precision": 0.8917310537724579,
+        "recall": 0.924466680238918,
+        "f1-score": 0.8778310746633665,
+        "support": 334770.0
+      },
+      "weighted avg": {
+        "precision": 0.9986541413116347,
+        "recall": 0.9977716043851003,
+        "f1-score": 0.998107486874936,
+        "support": 334770.0
+      }
+    }
+  },
+  "logreg_test": {
+    "macro_f1": 0.3933,
+    "per_class": {
+      "benign": {
+        "precision": 0.9978246987331342,
+        "recall": 0.8519124299150891,
+        "f1-score": 0.9191135870730499,
+        "support": 284298.0
+      },
+      "dos_ddos": {
+        "precision": 0.8352443642283328,
+        "recall": 0.978016741256423,
+        "f1-score": 0.9010097539559832,
+        "support": 48264.0
+      },
+      "port_scan": {
+        "precision": 0.10980392156862745,
+        "recall": 0.9556313993174061,
+        "f1-score": 0.1969750263805839,
+        "support": 293.0
+      },
+      "brute_force": {
+        "precision": 0.4822463768115942,
+        "recall": 0.9694100509832484,
+        "f1-score": 0.644084200338737,
+        "support": 1373.0
+      },
+      "web_attack": {
+        "precision": 0.019083512802105768,
+        "recall": 0.9937694704049844,
+        "f1-score": 0.03744790749545108,
+        "support": 321.0
+      },
+      "botnet": {
+        "precision": 0.027395498392282957,
+        "recall": 0.9861111111111112,
+        "f1-score": 0.05330997372043549,
+        "support": 216.0
+      },
+      "infiltration": {
+        "precision": 0.0005235602094240838,
+        "recall": 0.6,
+        "f1-score": 0.001046207497820401,
+        "support": 5.0
+      },
+      "accuracy": 0.8708844878573349,
+      "macro avg": {
+        "precision": 0.3531602761065002,
+        "recall": 0.9049787432840374,
+        "f1-score": 0.3932838080660087,
+        "support": 334770.0
+      },
+      "weighted avg": {
+        "precision": 0.9699140988529261,
+        "recall": 0.8708844878573349,
+        "f1-score": 0.9133257806735587,
+        "support": 334770.0
+      }
+    }
+  },
+  "rf_test": {
+    "macro_f1": 0.8798,
+    "per_class": {
+      "benign": {
+        "precision": 0.9995279279914041,
+        "recall": 0.9979704394684451,
+        "f1-score": 0.9987485765278015,
+        "support": 284298.0
+      },
+      "dos_ddos": {
+        "precision": 0.9977619363395226,
+        "recall": 0.997596552295707,
+        "f1-score": 0.9976792374637381,
+        "support": 48264.0
+      },
+      "port_scan": {
+        "precision": 0.9150943396226415,
+        "recall": 0.9931740614334471,
+        "f1-score": 0.9525368248772504,
+        "support": 293.0
+      },
+      "brute_force": {
+        "precision": 0.9970760233918129,
+        "recall": 0.9934450109249818,
+        "f1-score": 0.9952572053994893,
+        "support": 1373.0
+      },
+      "web_attack": {
+        "precision": 0.9874213836477987,
+        "recall": 0.9781931464174455,
+        "f1-score": 0.9827856025039123,
+        "support": 321.0
+      },
+      "botnet": {
+        "precision": 0.3205521472392638,
+        "recall": 0.9675925925925926,
+        "f1-score": 0.4815668202764977,
+        "support": 216.0
+      },
+      "infiltration": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1-score": 0.75,
+        "support": 5.0
+      },
+      "accuracy": 0.997849269647818,
+      "macro avg": {
+        "precision": 0.8882048226046348,
+        "recall": 0.932567400447517,
+        "f1-score": 0.8797963238640983,
+        "support": 334770.0
+      },
+      "weighted avg": {
+        "precision": 0.99873967953273,
+        "recall": 0.997849269647818,
+        "f1-score": 0.9981869270571937,
+        "support": 334770.0
+      }
+    }
+  },
+  "xgboost_test": {
+    "macro_f1": 0.9354,
+    "per_class": {
+      "benign": {
+        "precision": 0.9999471836565107,
+        "recall": 0.9989095948617296,
+        "f1-score": 0.9994281199575576,
+        "support": 284298.0
+      },
+      "dos_ddos": {
+        "precision": 0.9976223458142949,
+        "recall": 0.9997513674788663,
+        "f1-score": 0.9986857219732798,
+        "support": 48264.0
+      },
+      "port_scan": {
+        "precision": 0.9240506329113924,
+        "recall": 0.9965870307167235,
+        "f1-score": 0.9589490968801314,
+        "support": 293.0
+      },
+      "brute_force": {
+        "precision": 0.9970951343500363,
+        "recall": 1.0,
+        "f1-score": 0.9985454545454545,
+        "support": 1373.0
+      },
+      "web_attack": {
+        "precision": 0.990625,
+        "recall": 0.9875389408099688,
+        "f1-score": 0.9890795631825273,
+        "support": 321.0
+      },
+      "botnet": {
+        "precision": 0.5587467362924282,
+        "recall": 0.9907407407407407,
+        "f1-score": 0.7145242070116862,
+        "support": 216.0
+      },
+      "infiltration": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1-score": 0.8888888888888888,
+        "support": 5.0
+      },
+      "accuracy": 0.9990142485885832,
+      "macro avg": {
+        "precision": 0.9240124332892375,
+        "recall": 0.9676468106582898,
+        "f1-score": 0.9354430074913608,
+        "support": 334770.0
+      },
+      "weighted avg": {
+        "precision": 0.9992402774815681,
+        "recall": 0.9990142485885832,
+        "f1-score": 0.9990866402020177,
+        "support": 334770.0
+      }
+    }
+  },
+  "average_precision": {
+    "benign": 1.0,
+    "dos_ddos": 1.0,
+    "port_scan": 0.9943,
+    "brute_force": 1.0,
+    "web_attack": 0.9949,
+    "botnet": 0.9031,
+    "infiltration": 0.8008
+  },
+  "latency": {
+    "batch_ms_per_flow": 0.0254,
+    "single_flow_ms": 1.469
+  },
+  "model_version": "triage-xgb-1.0.0",
+  "seed": 42,
+  "source_dataset": "dhoogla/cicids2017 (version 2, no-metadata)",
+  "generated_at": "2026-07-08T05:40:13.383682+00:00",
+  "data_hash": "343dfe118f0e5417",
+  "n_rows_after_cleaning": 2231795,
+  "heartbleed_rows_excluded": 11,
+  "constant_cols_dropped": [
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate"
+  ],
+  "n_features": 69,
+  "feature_cols": [
+    "Protocol",
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Fwd Packets Length Total",
+    "Bwd Packets Length Total",
+    "Fwd Packet Length Max",
+    "Fwd Packet Length Min",
+    "Fwd Packet Length Mean",
+    "Fwd Packet Length Std",
+    "Bwd Packet Length Max",
+    "Bwd Packet Length Min",
+    "Bwd Packet Length Mean",
+    "Bwd Packet Length Std",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow IAT Max",
+    "Flow IAT Min",
+    "Fwd IAT Total",
+    "Fwd IAT Mean",
+    "Fwd IAT Std",
+    "Fwd IAT Max",
+    "Fwd IAT Min",
+    "Bwd IAT Total",
+    "Bwd IAT Mean",
+    "Bwd IAT Std",
+    "Bwd IAT Max",
+    "Bwd IAT Min",
+    "Fwd PSH Flags",
+    "Fwd URG Flags",
+    "Fwd Header Length",
+    "Bwd Header Length",
+    "Fwd Packets/s",
+    "Bwd Packets/s",
+    "Packet Length Min",
+    "Packet Length Max",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "FIN Flag Count",
+    "SYN Flag Count",
+    "RST Flag Count",
+    "PSH Flag Count",
+    "ACK Flag Count",
+    "URG Flag Count",
+    "CWE Flag Count",
+    "ECE Flag Count",
+    "Down/Up Ratio",
+    "Avg Packet Size",
+    "Avg Fwd Segment Size",
+    "Avg Bwd Segment Size",
+    "Subflow Fwd Packets",
+    "Subflow Fwd Bytes",
+    "Subflow Bwd Packets",
+    "Subflow Bwd Bytes",
+    "Init Fwd Win Bytes",
+    "Init Bwd Win Bytes",
+    "Fwd Act Data Packets",
+    "Fwd Seg Size Min",
+    "Active Mean",
+    "Active Std",
+    "Active Max",
+    "Active Min",
+    "Idle Mean",
+    "Idle Std",
+    "Idle Max",
+    "Idle Min"
+  ],
+  "categories": [
+    "benign",
+    "dos_ddos",
+    "port_scan",
+    "brute_force",
+    "web_attack",
+    "botnet",
+    "infiltration"
+  ],
+  "severity_base": {
+    "benign": 0.0,
+    "port_scan": 2.0,
+    "brute_force": 3.0,
+    "dos_ddos": 4.0,
+    "web_attack": 4.0,
+    "botnet": 5.0,
+    "infiltration": 5.0
+  },
+  "split": {
+    "train": 1562255,
+    "val": 334770,
+    "test": 334770
+  },
+  "xgb_tuning_log": [
+    {
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "best_iteration": 299,
+      "val_macro_f1": 0.9148
+    },
+    {
+      "max_depth": 6,
+      "learning_rate": 0.3,
+      "best_iteration": 201,
+      "val_macro_f1": 0.9191
+    },
+    {
+      "max_depth": 8,
+      "learning_rate": 0.1,
+      "best_iteration": 299,
+      "val_macro_f1": 0.9377
+    },
+    {
+      "max_depth": 8,
+      "learning_rate": 0.3,
+      "best_iteration": 165,
+      "val_macro_f1": 0.9168
+    },
+    {
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "best_iteration": 299,
+      "val_macro_f1": 0.916
+    },
+    {
+      "max_depth": 10,
+      "learning_rate": 0.3,
+      "best_iteration": 125,
+      "val_macro_f1": 0.916
+    }
+  ],
+  "xgb_best": {
+    "max_depth": 8,
+    "learning_rate": 0.1,
+    "best_iteration": 299,
+    "val_macro_f1": 0.9377
+  }
+}
