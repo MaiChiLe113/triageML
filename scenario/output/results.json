@@ -1,0 +1,98 @@
+[
+  {
+    "name": "benign_web_browse",
+    "expected_category": "benign",
+    "explanation": "A short HTTPS request/response over TCP: balanced forward/backward packet counts and byte volumes, a handful of PSH/ACK flags, one clean SYN/FIN pair, moderate inter-arrival times, and no repeated single-port hammering or flood-scale packet rate. None of the scan/flood/brute-force signatures below are present.",
+    "triage_output": {
+      "event_id": "evt-scenario-000",
+      "predicted_category": "benign",
+      "confidence": 1.0,
+      "risk_score": 0.0,
+      "priority": "Low",
+      "severity_score": 0.0,
+      "recommended_action": "archive",
+      "entities": {
+        "src_ip": null,
+        "dst_ip": null,
+        "dst_port": null,
+        "protocol": null
+      },
+      "model_version": "triage-xgb-1.0.0",
+      "probabilities": {
+        "benign": 1.0,
+        "dos_ddos": 0.0,
+        "port_scan": 0.0,
+        "brute_force": 0.0,
+        "web_attack": 0.0,
+        "botnet": 0.0,
+        "infiltration": 0.0
+      },
+      "measured_single_flow_ms": 0.529
+    },
+    "matched_expected": true
+  },
+  {
+    "name": "dos_ddos_http_flood",
+    "expected_category": "dos_ddos",
+    "explanation": "An application-layer flood (Hulk/GoldenEye-style, as represented in CICIDS2017): a single TCP connection (one SYN) flooded with ~500 near-identical small forward packets in under a millisecond, with essentially no legitimate backward response, and an extreme Flow/Fwd Packets-per-second rate that no normal client-server exchange produces. TCP flag *counts* are kept near their normal 0/1 range (they mark flag presence, not packet volume, in this dataset) so the packet-rate/duration/byte-rate features carry the flood signal.",
+    "triage_output": {
+      "event_id": "evt-scenario-001",
+      "predicted_category": "benign",
+      "confidence": 0.9999,
+      "risk_score": 0.0,
+      "priority": "Low",
+      "severity_score": 0.0,
+      "recommended_action": "archive",
+      "entities": {
+        "src_ip": null,
+        "dst_ip": null,
+        "dst_port": null,
+        "protocol": null
+      },
+      "model_version": "triage-xgb-1.0.0",
+      "probabilities": {
+        "benign": 0.9999,
+        "dos_ddos": 0.0,
+        "port_scan": 0.0,
+        "brute_force": 0.0,
+        "web_attack": 0.0,
+        "botnet": 0.0,
+        "infiltration": 0.0
+      },
+      "measured_single_flow_ms": 0.773
+    },
+    "matched_expected": false
+  },
+  {
+    "name": "slow_brute_force_ambiguous",
+    "expected_category": "brute_force",
+    "explanation": "A deliberately low-and-slow credential-guessing pattern (e.g. SSH login attempts paced ~1.5s apart to evade rate-based detection): 40 small forward packets and 40 small backward rejections over a full 60-second flow, one connection (single SYN, normal flag presence) but low Flow Bytes/s combined with a long duration and large, regularly-spaced Fwd/Bwd inter-arrival times from the repeated attempt/reject cycle. This sits between 'quiet normal traffic' and 'brute force' in feature space, unlike the flood signature above, so it's the scenario most likely to produce a lower-confidence, 'needs review' style prediction.",
+    "triage_output": {
+      "event_id": "evt-scenario-002",
+      "predicted_category": "benign",
+      "confidence": 1.0,
+      "risk_score": 0.0,
+      "priority": "Low",
+      "severity_score": 0.0,
+      "recommended_action": "archive",
+      "entities": {
+        "src_ip": null,
+        "dst_ip": null,
+        "dst_port": null,
+        "protocol": null
+      },
+      "model_version": "triage-xgb-1.0.0",
+      "probabilities": {
+        "benign": 1.0,
+        "dos_ddos": 0.0,
+        "port_scan": 0.0,
+        "brute_force": 0.0,
+        "web_attack": 0.0,
+        "botnet": 0.0,
+        "infiltration": 0.0
+      },
+      "measured_single_flow_ms": 0.6215
+    },
+    "matched_expected": false
+  }
+]
